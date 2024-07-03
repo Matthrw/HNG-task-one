@@ -7,17 +7,29 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  background-color: #fcf4f4;
+}
 .navbar {
-  background-color: crimson;
+  background-color: #000;
   font-family: Calibri;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 20px;
+  width: 100vw;
 }
 
 .navdiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navdiv .logo,
+ul,
+button {
+  margin-top: 10px;
 }
 
 .logo a {
@@ -79,4 +91,159 @@ button a {
 
 button a:hover {
   color: #ffffff;
+}
+
+.goal--container {
+  width: 70%;
+  height: 350px;
+  background-color: #073f52;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.goal--container p {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  margin-left: 30%;
+}
+
+.goal--container-content {
+  margin-top: 20px;
+}
+
+.goal--container-content p {
+  margin-top: 10px;
+}
+.blue--container {
+  background-color: #1dc3fa;
+  width: 20%;
+  height: 300px;
+  position: absolute;
+  top: 95px;
+  right: 100px;
+  border-radius: 5px;
+}
+
+.image--container {
+  position: absolute;
+  top: 170px;
+  right: 150px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  right: 0;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .logo a {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  li a {
+    font-size: 10px;
+  }
+  button {
+    font-size: 20px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .image--container,
+  .blue--container {
+    display: none;
+  }
+  .goal--container {
+    /* width: 100%; */
+    margin-top: -16px;
+  }
+  .goal--container p {
+    text-align: center;
+    margin-left: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 858px) {
+  .logo a {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .checkbtn {
+    display: block;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+
+  .image--container,
+  .blue--container {
+    display: none;
+  }
+  .goal--container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+  .goal--container-content {
+    margin-top: 0px;
+  }
+
+  .goal--container-content p {
+    margin-top: 0px;
+  }
+
+  .icons {
+    padding-right: 100px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    top: 40px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  button {
+    font-size: 12px;
+    margin-right: 1px;
+    margin-left: 10px;
+  }
+  .icons {
+    padding-right: -10px;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
