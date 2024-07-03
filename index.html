@@ -14,8 +14,8 @@
     <title>HNG TASK-ONE</title>
   </head>
   <body>
-    <!-- header -->
     <div class="container">
+      <!-- header content start here -->
       <nav class="navbar">
         <div class="navdiv">
           <!-- logo -->
@@ -29,7 +29,10 @@
           </label>
           <ul>
             <li>
-              <a href="https://hng.tech/learn" target="_blank"
+              <a
+                href="https://hng.tech/learn"
+                target="_blank"
+                data-testid="hngLink"
                 ><img
                   src="./img/logo.svg"
                   alt="hng.com"
@@ -37,7 +40,10 @@
               /></a>
             </li>
             <li>
-              <a href="https://keyword.dog/" target="_blank"
+              <a
+                href="https://keyword.dog/"
+                target="_blank"
+                data-testid="keywordLink"
                 ><img
                   src="./img/logo (1).svg"
                   alt="keyword.com"
@@ -45,7 +51,10 @@
               /></a>
             </li>
             <li>
-              <a href="https://scrapeanyweb.site/" target="_blank"
+              <a
+                href="https://scrapeanyweb.site/"
+                target="_blank"
+                data-testid="scrapeanywebLink"
                 ><img
                   src="./img/logo.png"
                   alt="logo.com"
@@ -89,7 +98,8 @@
           </div>
         </div>
       </nav>
-      <!-- body -->
+      <!-- header content ends here -->
+      <!-- body  start here-->
 
       <div class="goal--container">
         <div class="goal--container-content">
@@ -120,8 +130,8 @@
         />
       </div>
       <div class="blue--container"></div>
-
-      <!-- footer -->
+      <!-- body  ends here-->
+      <!-- footer starts here-->
       <footer class="footer">
         <p data-testid="slackDisplayName">Olushola Matthew</p>
         <span id="currentTime" data-testid="currentTimeUTC"></span>
@@ -130,6 +140,7 @@
         >
         <span data-testid="slackEmail">opeyemi.s.olushola@gmail.com</span>
       </footer>
+      <!-- footer ends here-->
     </div>
   </body>
   <script src="index.js"></script>
