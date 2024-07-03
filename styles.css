@@ -108,8 +108,8 @@ button a:hover {
 .goal--container p {
   margin: 0;
   padding: 0;
-  width: 400px;
-  margin-left: 30%;
+  /* width: 400px; */
+  /* margin-left: 30%; */
 }
 
 .goal--container-content {
@@ -189,6 +189,7 @@ button a:hover {
     display: block;
     padding-right: 5px;
     padding-left: 10px;
+    padding-top: 20px;
   }
 
   .image--container,
